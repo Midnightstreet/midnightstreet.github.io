@@ -14,18 +14,23 @@
 </head>
 
 <body class="text-center">
-    <div class="container-fluid text-center"><img class="img-fluid" src="assets/img/title_websize.png" width="480" style="margin: 18px;"></div>
-    <div class="container-fluid" style="width: 100%;margin: 0;padding: 0;text-align: center;">
-        <div class="row" style="text-align: center;margin: 0;width: 100%;">
-            <div class="col-md-4" style="width: 20%;text-align: center;"><button class="btn btn-primary" type="button" style="height: 6vw;width: 15vw;text-align: center;font-size: 2vw;padding: 0;">Button</button><button class="btn btn-primary" type="button" style="height: 6vw;width: 15vw;text-align: center;font-size: 2vw;padding: 0;">Button</button><button class="btn btn-primary" type="button" style="height: 6vw;width: 15vw;text-align: center;font-size: 2vw;padding: 0;">Button</button><button class="btn btn-primary" type="button" style="height: 6vw;width: 15vw;text-align: center;font-size: 2vw;padding: 0;">Button</button><button class="btn btn-primary" type="button" style="height: 6vw;width: 15vw;text-align: center;font-size: 2vw;padding: 0;">Button</button></div>
-            <div class="col-md-4" style="width: 60%;text-align: center;">
-                <div class="ratio ratio-16x9" id="html_games"><iframe src="https://midnightstreet.github.io/wick_testing.html" allowfullscreen=""></iframe></div><button onclick="openFullscreen();" class="btn btn-primary" type="button" style="margin: 12px;">Fullscreen</button>
-            </div>
-            <div class="col-md-4" style="width: 20%;text-align: center;">
-                <h3 class="text-center">Blog</h3>
+    <header>
+        <div class="container-fluid text-center" style="margin-bottom: 0;padding-top: 2vw;padding-bottom: 6vw;margin-left: 0;"><img class="img-fluid" src="assets/img/title_websize.png" style="margin: 0;width: 60%;"></div>
+    </header>
+    <main>
+        <div class="container-fluid" style="width: 100%;margin: 0;padding: 0;text-align: center;">
+            <div class="row" style="text-align: center;margin: 0;width: 100%;">
+                <div class="col-md-4" style="width: 20%;text-align: center;"><button class="btn btn-primary" type="button" style="height: 4vw;width: 14vw;text-align: center;font-size: 2vw;padding: 0;margin: 1vw;">Button</button><button class="btn btn-primary" type="button" style="height: 4vw;width: 14vw;text-align: center;font-size: 2vw;padding: 0;margin: 1vw;">Button</button><button class="btn btn-primary" type="button" style="height: 4vw;width: 14vw;text-align: center;font-size: 2vw;padding: 0;margin: 1vw;">Button</button><button class="btn btn-primary" type="button" style="height: 4vw;width: 14vw;text-align: center;font-size: 2vw;padding: 0;margin: 1vw;">Button</button><button class="btn btn-primary" type="button" style="height: 4vw;width: 14vw;text-align: center;font-size: 2vw;padding: 0;margin: 1vw;">Button</button></div>
+                <div class="col-md-4" style="width: 60%;text-align: center;">
+                    <div class="ratio ratio-4x3" id="html_games"><iframe src="https://midnightstreet.github.io/wick_testing.html" allowfullscreen=""></iframe></div><button onclick="openFullscreen();" class="btn btn-primary" type="button" style="margin: 12px;">Fullscreen</button>
+                </div>
+                <div class="col-md-4" style="width: 20%;text-align: center;"></div>
             </div>
         </div>
-    </div><nav>
+    </main>
+    <footer style="margin-top: 100px;margin-bottom: 50px;">
+        <h4 style="margin-bottom: 24px;margin-top: 48px;">This website is made using Github and all interactive content is made using Wick Editor.<br></h4><a class="btn btn-primary btn-sm" role="button" style="color: rgb(0,0,0);background: rgb(0,255,194);width: 12vw;" href="https://www.wickeditor.com/#/">Try Wick Editor</a>
+        <p style="margin-bottom: 0px;"><br>All other names and logos are trademarks of their respective owners<br><br>Copyright<br></p><nav>
     <script>
     /* Get the element you want displayed in fullscreen */ 
     var elem = document.getElementById("html_games");
@@ -41,7 +46,13 @@
       }
     }
     </script>
+
+        <script type="text/JavaScript">
+        document.write(new Date().getFullYear());
+    
+    </script>
 </nav>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
