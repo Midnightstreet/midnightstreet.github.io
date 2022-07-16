@@ -210,6 +210,8 @@ body,td,th {
 	margin-top: 4vw;
 }
 .disquis {
+	padding-left: 4vw;
+	padding-right: 4vw;
 	width: 80%;
 }
 .footer{
