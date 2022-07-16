@@ -209,6 +209,9 @@ body,td,th {
 .other_interactive{
 	margin-top: 4vw;
 }
+.disquis {
+	width: 80%;
+}
 .footer{
 	background-color: black;
 	color: white;
