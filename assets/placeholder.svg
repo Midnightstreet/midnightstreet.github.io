@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a8d59d;
+        stroke-width: 1px;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #e1fdea;
+        stroke-width: 25px;
+        stroke-dasharray: 100 25;
+      }
+
+      .cls-3 {
+        stroke-width: 5.71px;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="639.671" y1="412.281" x2="639.671" y2="308.312" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7dede2"/>
+      <stop offset="0.663" stop-color="#bdfff2"/>
+      <stop offset="0.687" stop-color="#56e8f2"/>
+      <stop offset="1" stop-color="#56e8f2"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M0,0H1280V720H0V0H0Z"/>
+  <path id="Rectangle_1_copy" data-name="Rectangle 1 copy" class="cls-2" d="M0,0H1280V720H0V0H0Z"/>
+  <path id="Placeholder" class="cls-3" d="M149.848,308.328H49.048V410.136H89.8V379.608h60.048v-71.28Zm-39.6,50.976H89.8V343.9h20.448V359.3Zm138.095,16.848H201.687v-66.24H160.935V411.72h87.408V376.152Zm112.319-66.528H258.854V411.432h40.608V380.9H319.91v30.528h40.752V309.624ZM319.91,360.6H299.462V345.192H319.91V360.6Zm148.031,14.976h-54V344.9h54V309.336H373.189V411.144h94.752V375.576Zm102.383,0.72H519.492v-5.184H544.98v-20.3H519.492v-5.184h50.832V310.056H478.74V411.864h91.584V376.3ZM685.09,310.488H644.338V341.16h-20.3V310.488H583.282V412.3h40.752V381.768h20.3V412.3H685.09V310.488ZM799.857,308.9H698.049V410.568H799.857V308.9ZM759.249,375H738.8V344.472h20.448V375Zm140.974,1.152H853.567v-66.24H812.815V411.72h87.408V376.152Zm110.737-51.12-20.45-15.264H909.15V411.576h81.36l20.45-15.264v-71.28Zm-40.754,50.976H949.9V350.52h20.3v25.488ZM1114.49,376.3h-50.83v-5.184h25.49v-20.3h-25.49v-5.184h50.83V310.056h-91.58V411.864h91.58V376.3ZM1230.27,308.9H1128.46V410.712h40.75V380.184l15.27,30.528h45.79L1215,380.184h15.27V308.9Zm-40.75,50.976h-20.31V344.472h20.31V359.88Z"/>
+</svg>

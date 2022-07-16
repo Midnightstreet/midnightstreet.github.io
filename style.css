@@ -1,0 +1,239 @@
+@charset "utf-8";
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color:  white;
+    font-family: comfortaa;
+    font-style: normal;
+}
+body,td,th {
+    font-family: comfortaa;
+    font-style: normal;
+}
+/* CSS General Style */
+
+.body {
+    background-color: black;
+    width: auto;
+}
+.top_body{
+	background-image: url("assets/midnight_street.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: darkslateblue;
+}
+.primary_header {
+	width: auto;
+}
+.logo {
+	height: 24vw;
+	width: auto;
+	padding-top: 32px;
+	padding-bottom: 32px;
+    transition-duration: 0.4s;
+
+}
+.logo:hover {
+	height: 25vw;
+	width: auto;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+.nav {
+	height: 6vw;
+}
+.interactive_button {
+	border: 0;
+    background-image: url("assets/interactive_button-normal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 3vw;
+	width: 18vw;
+    transition-duration: 0.4s;
+}
+.interactive_button:hover {
+	border: 0;
+    background-image: url("assets/interactive_button-hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 4vw;
+	width: 24vw;
+}
+.galleries_button {
+	border: 0;
+    background-image: url("assets/galleries_button-normal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 2.5vw;
+	width: 15vw;
+    transition-duration: 0.4s;
+}
+.galleries_button:hover {
+	border: 0;
+    background-image: url("assets/galleries_button-hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 4vw;
+	width: 24vw;
+}
+.about_button {
+	border: 0;
+    background-image: url("assets/about_button-normal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 2.8vw;
+	width: 10vw;
+    transition-duration: 0.4s;
+}
+.about_button:hover {
+	border: 0;
+    background-image: url("assets/about_button-hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 4.8vw;
+	width: 16vw;
+}
+.interactive_content{
+	background:url("assets/loading.svg") center no-repeat;
+	background-size: cover;
+	border: 0;
+	width: 100%;
+	height: 28vw;
+}
+.fullsize_button{
+	border: 1pt solid white;
+	color: white;
+	font-size: 1.4vw;
+	background-color: transparent;
+	height: 4vw;
+	width: 12vw;
+	margin-top: 1vw;
+	margin-bottom: 1vw;
+	transition-duration: 0.4s;
+}
+.fullsize_button:hover{
+	border: 1 solid white;
+	color: black;
+	font-size: 1.4vw;
+	background-color: white;
+	height: 4.5vw;
+	width: 14vw;
+	margin-top: 1vw;
+}
+.patreon_button {
+	margin-bottom: 4vw;
+	border: 0;
+    background-image: url("assets/patreon_button-normal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 4vw;
+	width: 18vw;
+    transition-duration: 0.2s;
+}
+.patreon_button:hover {
+	border: 0;
+    background-image: url("assets/patreon_button-hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 5.2vw;
+	width: 24vw;
+}
+.patreon_button:active {
+	border: 0;
+    background-image: url("assets/patreon_button-hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 4.6vw;
+	width: 22vw;
+}
+.fanbox_button {
+	margin-bottom: 20vw;
+	border: 0;
+    background-image: url("assets/fanbox_button-normal.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 3.6vw;
+	width: 16vw;
+    transition-duration: 0.2s;
+}
+.fanbox_button:hover {
+	border: 0;
+    background-image: url("assets/fanbox_button-hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 4.5vw;
+	width: 21vw;
+}
+.fanbox_button:active {
+	border: 0;
+    background-image: url("assets/fanbox_button-hover.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	background-color: transparent;
+	height: 4vw;
+	width: 18vw;
+}
+.main_body {
+	padding-top:6vw;
+	padding-bottom: 6vw;
+	background-color: #1A0D1E;
+}
+.other_interactive{
+	margin-top: 4vw;
+}
+.footer{
+	background-color: black;
+	color: white;
+	margin-top: 4vw;
+	padding-top: 1vw;
+    padding-bottom: 100px;
+	
+}
+.wick_button{
+    border: 1pt solid #1EE29A;
+    color: #FFFFFF;
+    font-size: 1.4vw;
+    background-color: transparent;
+    height: 4vw;
+    width: 12vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    transition-duration: 0.4s;
+}
+.wick_button:hover{
+    border: 1;
+    color: black;
+    font-size: 1.4vw;
+    background-color: #1EE29A;
+    height: 4.5vw;
+    width: 14vw;
+    margin-top: 1vw;
+}

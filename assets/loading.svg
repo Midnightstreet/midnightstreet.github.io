@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 1px;
+        fill-rule: evenodd;
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="63.828" y1="68.094" x2="63.828" y2="59.531" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3df2ac"/>
+      <stop offset="0.604" stop-color="#43ea80"/>
+      <stop offset="0.656" stop-color="#38f8d4"/>
+      <stop offset="1" stop-color="#38f8d4"/>
+    </linearGradient>
+  </defs>
+  <path id="Loading" class="cls-1" d="M41.507,65.133H37.619v-5.52h-3.4V68.1h7.284V65.133Zm9.42-5.6H42.443V68h8.484V59.529Zm-3.384,5.508h-1.7V62.493h1.7v2.544Zm12.948-5.448H52.007v8.484h3.384V65.529h1.7v2.544h3.4V59.589Zm-3.4,4.248h-1.7V62.553h1.7v1.284Zm12.72-2.964-1.7-1.272h-6.78v8.484h6.78l1.7-1.272v-5.94Zm-3.4,4.248H64.727V63h1.692v2.124Zm7.86-5.544h-3.4v8.484h3.4V59.577ZM83.831,60V59.565h-3.4V62.4l-1.692-2.832h-3.4v8.484h3.4v-2.82l1.692,2.82h3.4V60Zm9.6,5.136V63.009H88.763V64.7h1.272v0.432H88.343V62.577h5.088V59.613H84.947V68.1h8.484V65.133Z"/>
+</svg>
