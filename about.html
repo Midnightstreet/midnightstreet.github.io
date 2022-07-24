@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	
+<head>	
+<meta charset="utf-8">
+<title>Midnightstreet</title>
+
+<!-- CSS here -->
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body  class="body">
+<div class="top_body">
+  <!-- Header here -->
+  <div align="center" class="primary_header">
+	<img class="logo" onClick="location.href='index.html'" src="assets/title_websize.png"/>
+</div>
+<table class="index_content-1" width="100%">
+  <tbody>
+    <tr>
+      <td width="25%">
+		<table width="100%" border="0">
+          <tbody align="center">
+            <tr class="nav">
+              <td>
+				  <input class="interactive_button" onClick="location.href='interactive.html'" type="button"></td>
+            </tr>
+            <tr class="nav">
+              <td><input class="galleries_button" type="button">
+			  </td>
+            </tr>
+            <tr class="nav">
+              <td><input class="about_button" onClick="location.href='about.html'" type="button">
+		      </td>
+            </tr>
+          </tbody>
+        </table>
+	  </td>
+<td align="center" width="50%"><h2>Latest Interative Animated</h2>
+		  <iframe class="interactive_content" id="interactive_content" src="https://midnightstreet.github.io/wick_testing.html" allowfullscreen></iframe>
+		  <button class="fullsize_button" onclick="openFullscreen();">Fullscreen</button>
+	  </td>
+      <td align="center" width="25%">&nbsp;
+		<table width="100%" border="0">
+          <tbody align="center">
+		    <tr>
+              <td>
+				  <button class="patreon_button" onClick="location.href='https://www.patreon.com/mengmira'"></button>
+			  </td>
+            </tr>
+		    <tr>
+              <td>
+				  <button class="fanbox_button" onClick="location.href='https://mengmira.fanbox.cc'"></button>
+			  </td>
+            </tr>
+          </tbody>
+
+        </table>
+	  </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<div class="main_body">
+  <h2 align="center">About Midnight Street</h2>
+  <p align="center">Midnight Street is a my personal website where I upload all type content I'm made.</p>
+	
+  <table width="100%" border="0">
+    <tbody>
+      <tr>
+        <td width="25%"><img src="photo_profile-512.png" width="100%"/>
+		</td>
+        <td width="75%">
+          <h2>About Me</h2>
+          <p>My name is Mira, and I'm an NSFW artist that specializes in anthromorphic artwork. I solely work in digital, and I take commissions and also work on personal projects.</p>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+	
+<div align="center" class="footer">
+  <h4>This website is made hosted Github and all interactive content is made using Wick Editor.</h4>
+  <button class="wick_button">Try Wick Editor</button>
+  <p>All other names and logos are trademarks of their respective owner</p>
+  <p>&nbsp;Copyright © 2022 Midnight Street</p>
+</div>
+</body>
+</html>
+<html>
+
+	
+
+<script>
+    /* Get the element you want displayed in fullscreen */ 
+    var elem = document.getElementById("interactive_content");
+    
+    /* Function to open fullscreen mode */
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+      }
+    }
+</script>
+	
+</html>
