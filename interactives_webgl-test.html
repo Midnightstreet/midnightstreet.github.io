@@ -49,7 +49,7 @@
         </table>
 	  </td>
       <td align="center" width="50%"><h2>WEBGL Test</h2>
-		<iframe class="interactive_content" id="interactive_content" src="interactives/webgl_test/webgl_test.html" allowfullscreen></iframe>
+		<iframe class="interactive_content" src="interactives/webgl_test/webgl_test.html" allowfullscreen></iframe>
 		<p>Due to game engine problem this game only work for PC and please click fullscreen to able control the games</p>
 		<button class="fullsize_button" onClick="location.href='interactives/webgl_test/webgl_test.html'">Fullscreen</button>
 	  </td>
@@ -120,21 +120,7 @@
 	
 <!-- Script Area -->
 	
-<script>
-    /* Get the element you want displayed in fullscreen */ 
-    var elem = document.getElementById("interactive_content");
-    
-    /* Function to open fullscreen mode */
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-      }
-    }
-	
+<script>	
     /* Get the element you want displayed in fullscreen */ 
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
