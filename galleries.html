@@ -1,25 +1,24 @@
 <!doctype html>
 <html>
 <link rel="shortcut icon" href="favicon_512.png"/>
-	
 <!-- Header -->
 	
 <head>
   <meta charset="utf-8">
-  <title>Midnightstreet - Home</title>
+  <title>Midnightstreet - Galleries</title>
   <!-- CSS here -->
   <link href="style.css" rel="stylesheet" type="text/css">
+
 </head>
 
-	
-<body class="body">	  
+<body class="body">
 <div class="top_body">
 	
 	
 <!-- Midnight Street Title -->
 	
-<div align="center" class="primary_header">
-  <img class="logo" onClick="location.href='index.html'" src="assets/title_websize.png"/>
+  <div align="center" class="primary_header">
+	<img class="logo" onClick="location.href='index.html'" src="assets/title_websize.png"/>
 </div>
 	
 	
@@ -33,17 +32,17 @@
           <tbody align="center">
             <tr class="nav">
               <td>
-				  <input class="interactive_button" onClick="location.href='interactives.html'" type="button">
+			    <input class="interactive_button" onClick="location.href='interactives.html'" type="button">
 			  </td>
             </tr>
             <tr class="nav">
               <td>
-				 <input class="galleries_button" onClick="location.href='galleries.html'" type="button">
+				<input class="galleries_button" onClick="location.href='galleries.html'" type="button">
 			  </td>
             </tr>
             <tr class="nav">
               <td>
-				 <input class="about_button" onClick="location.href='about.html'" type="button">
+				<input class="about_button" onClick="location.href='about.html'" type="button">
 		      </td>
             </tr>
           </tbody>
@@ -74,6 +73,28 @@
   </tbody>
 </table>
 </div>
+	
+	
+<!-- Main Content -->
+	
+<div class="main_body">
+  <h2 align="center">About Midnight Street</h2>
+  <p align="center">Midnight Street is a my personal website where I upload all type content I'm made.</p>
+	
+  <table width="100%" border="0">
+    <tbody>
+      <tr>
+        <td width="25%">
+		  <img src="photo_profile-512.png" width="100%"/>
+		</td>
+        <td width="75%">
+          <h2>About Me</h2>
+          <p>My name is Mira, and I'm an NSFW artist that specializes in anthromorphic artwork. I solely work in digital, and I take commissions and also work on personal projects.</p>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 	
 <!-- Footer Content -->
@@ -96,23 +117,29 @@
 	
 <!-- Script Area -->
 	
-	<script>
+<script>
     /* Get the element you want displayed in fullscreen */ 
-      var elem = document.getElementById("interactive_content");
+    var elem = document.getElementById("interactive_content");
     
     /* Function to open fullscreen mode */
-      function openFullscreen() {
-        if (elem.requestFullscreen) 
-		{elem.requestFullscreen();}
-		else if (elem.webkitRequestFullscreen)
-			
-		/* Safari */
-		{elem.webkitRequestFullscreen();}
-		else if (elem.msRequestFullscreen)
-			
-	    /* IE11 */
-		{elem.msRequestFullscreen();}
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
       }
-    </script>
+    }
+	
+    /* Get the element you want displayed in fullscreen */ 
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://midnightstreet-interactive.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 	
 </html>

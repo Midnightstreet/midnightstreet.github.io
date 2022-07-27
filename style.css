@@ -61,7 +61,7 @@ body,td,th {
 }
 .interactive_button {
 	border: 0;
-    background-image: url("assets/interactive_button-normal.svg");
+    background-image: url("assets/interactives_button-normal.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -72,7 +72,7 @@ body,td,th {
 }
 .interactive_button:hover {
 	border: 0;
-    background-image: url("assets/interactive_button-hover.svg");
+    background-image: url("assets/interactives_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -82,7 +82,7 @@ body,td,th {
 }
 .interactive_button:active {
 	border: 0;
-    background-image: url("assets/interactive_button-hover.svg");
+    background-image: url("assets/interactives_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
