@@ -1,10 +1,14 @@
 @charset "utf-8";
+
+/* Font Setting */
+
+
 @font-face {
-    font-family: 'entsans';
+    font-family: 'closeness';
     src: url('closeness-bold.ttf')
 }
 @font-face {
-    font-family: 'altehaasgroteskregular';
+    font-family: 'aldrich';
 	src: url('aldrich-regular.ttf')
 }
 html, body {
@@ -16,16 +20,18 @@ html, body {
 
 h1,h2,h3,h4,h5,h6 {
     color:  white;
-    font-family: entsans;
+    font-family: closeness;
     font-style: normal;
 }
 body,td,th {
-    font-family: altehaasgroteskregular;
+    font-family: aldrich;
     font-style: normal;
 	font-size: 1.5vw;
 	color: white;
 }
-/* CSS General Style */
+
+/* CSS General Setting */
+
 
 .body {
     background-color: black;
@@ -247,8 +253,17 @@ body,td,th {
 	padding:6vw;
 	background-color: #1A0D1E;
 }
-.other_interactive{
+.other_interactive {
 	margin-top: 4vw;
+}
+.interactive_thumbnail {
+    transition-duration: 0.2s;
+}
+.interactive_thumbnail:hover {
+	transform: scale(1.2);
+}
+.interactive_thumbnail:active {
+	transform: scale(100);
 }
 .disquis {
 	margin-top: 4vw;
@@ -259,10 +274,8 @@ body,td,th {
 .footer{
 	background-color: black;
 	color: white;
-	margin-top: 4vw;
-	padding-top: 1vw;
-    padding-bottom: 100px;
-	
+	padding-top: 6vw;
+    padding-bottom: 10vw;
 }
 .wick_button{
     border: 1pt solid #1EE29A;

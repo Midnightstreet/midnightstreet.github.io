@@ -1,25 +1,27 @@
 <!doctype html>
 <html>
 <link rel="shortcut icon" href="favicon_512.png"/>
-	
 <!-- Header -->
 	
 <head>
+	
   <meta charset="utf-8">
-  <title>Midnightstreet - Home</title>
+  <title>Midnightstreet - About</title>
+	
   <!-- CSS here -->
   <link href="style.css" rel="stylesheet" type="text/css">
-</head>
 
 	
-<body class="body">	  
+</head>
+
+<body class="body">
 <div class="top_body">
 	
 	
 <!-- Midnight Street Title -->
 	
-<div align="center" class="primary_header">
-  <img class="logo" onClick="location.href='index.html'" src="assets/title_websize.png"/>
+  <div align="center" class="primary_header">
+	<img class="logo" onClick="location.href='index.html'" src="assets/title_websize.png"/>
 </div>
 	
 	
@@ -33,17 +35,17 @@
           <tbody align="center">
             <tr class="nav">
               <td>
-				  <input class="interactive_button" onClick="location.href='interactives.html'" type="button">
+			    <input class="interactive_button" onClick="location.href='interactives.html'" type="button">
 			  </td>
             </tr>
             <tr class="nav">
               <td>
-				 <input class="galleries_button" onClick="location.href='galleries.html'" type="button">
+				<input class="galleries_button" onClick="location.href='galleries.html'" type="button">
 			  </td>
             </tr>
             <tr class="nav">
               <td>
-				 <input class="about_button" onClick="location.href='about.html'" type="button">
+				<input class="about_button" onClick="location.href='about.html'" type="button">
 		      </td>
             </tr>
           </tbody>
@@ -74,19 +76,35 @@
   </tbody>
 </table>
 </div>
+	
+	
+<!-- Main Content -->
+	
+<div class="main_body">
+  <h2 align="center">Welcome to Midnightstreet</h2>
+  <p align="center">Midnightstreet is my side project in which I recreate "or at least emulate" the old days when furry flash games were popular by creating my own interactive animated/games using modern and open-source software such as Wick Editor or other raten use Flash.</p>
+	
+  <h2 align="center">&nbsp;</h2>
+  <h2 align="center">Why I'm Starting This Project</h2>
+  <p align="center">When I revisit old furry flash games, it feels like nostagia for me as an old furry, "yeah, I joined furry a long time ago," so I'd like to make my own interactive animated/games, but since Flash is killed by Adobe, I'd be better off using other software.</p>
+	
+  <p align="center">So I started to research and learn about some game engines like Unity, Godot, and others. However, all of those are app-based game engines that need to be installed and run, but what I really need is an engine that creates browser-based games that can be accessed using a modern browser. Then I discovered Wick Editor, which is very similar to Flash, but it's still in development and doesn't have many features like Flash for now.</p>
+	
+  <p align="center">But I'm willing to give a chance to try Wick Editor's. After all, I really like all the features it has, so if you're interested in trying Wick Editor, you guys could check in on the link below.</p>		
+</div> 
 
 	
 <!-- Footer Content -->
 	
 <div align="center" class="footer">
-  <h4>This website is hosted using Github and all interactive content is made using Wick Editor.</h4>
+  <h4>This website is hosted using Github and mostly interactive content is made using Wick Editor.</h4>
   <button class="wick_button">Try Wick Editor</button>
   <p>All other names and logos are trademarks of their respective owners<br>
      Copyright ©
     <script type="text/JavaScript">
     document.write(new Date().getFullYear());
     </script>
-    Midnight Street
+    Midnightstreet
   </p>
 </div>
 	
@@ -96,23 +114,19 @@
 	
 <!-- Script Area -->
 	
-	<script>
+<script>
     /* Get the element you want displayed in fullscreen */ 
-      var elem = document.getElementById("interactive_content");
+    var elem = document.getElementById("interactive_content");
     
     /* Function to open fullscreen mode */
-      function openFullscreen() {
-        if (elem.requestFullscreen) 
-		{elem.requestFullscreen();}
-		else if (elem.webkitRequestFullscreen)
-			
-		/* Safari */
-		{elem.webkitRequestFullscreen();}
-		else if (elem.msRequestFullscreen)
-			
-	    /* IE11 */
-		{elem.msRequestFullscreen();}
+    function openFullscreen() {
+      if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+      } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+      } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
       }
-    </script>
-	
+    }
+</script>
 </html>
