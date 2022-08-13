@@ -47,6 +47,7 @@ body,td,th {
 	text-align: right;
 }
 .alert-text {
+	font-size: 2vw;
 	padding: 10vw;
 }
 .body {
