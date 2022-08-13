@@ -1,6 +1,15 @@
 <!doctype html>
 <html>
-<link rel="shortcut icon" href="interactives/favicon_512.png"/>
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<div class="alert" id="popup" style="display:none;">
+  <div class="alert-close" id="popup-close">X</div>
+  <p class="alert-text">This website contains NSFW material.
+Please ensure that you are at least 18 years old. otherwise, we have no responsibility for your future.</p>
+</div>
+	
+<link rel="shortcut icon" href="favicon_512.png"/>
 <!-- Header -->
 	
 <head>
@@ -128,6 +137,17 @@
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
+	
+    $(function () {
+        if (localStorage.getItem('popState') != 'shown') {
+            $("#popup").fadeIn();
+        }
+
+        $('#popup-close').click(function (e) {
+            $('#popup').fadeOut();
+            localStorage.setItem('popState', 'shown');
+        });
+    });
 </script>
 	
 </html>
