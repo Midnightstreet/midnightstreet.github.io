@@ -56,6 +56,11 @@ body,td,th {
     transition-duration: 0.4s;
 
 }
+.header_content {
+	border: none;
+	width: 100%;
+	height: 780px;
+}
 .logo:hover {
 	height: 25vw;
 	width: auto;
