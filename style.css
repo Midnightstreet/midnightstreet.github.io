@@ -306,7 +306,7 @@ a {
     padding-bottom: 10vw;
 }
 .footer_submenu {
-	height: 3vw;
+	vertical-align: text-top;
 }
 .wick_button{
     border: 1pt solid #1EE29A;
