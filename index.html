@@ -1,105 +1,90 @@
 <!doctype html>
-<html>
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<div class="alert" id="popup" style="display:none;">
-  <div class="alert-close" id="popup-close">X</div>
-  <p class="alert-text">This website contains NSFW material.
-Please ensure that you are at least 18 years old. otherwise, we have no responsibility for your future.</p>
-</div>
+<html>
+
+<!--
 	
-<link rel="shortcut icon" href="/favicon_512.png"/>
+  <div id="nsfw"></div>
+	
+<!-- Favicon -->
+	
+  <link rel="shortcut icon" href="/favicon_512.png"/>
+	
+	
 <!-- Header -->
 	
-<head>
-  <meta charset="utf-8">
-  <title>Midnightstreet</title>
-  <!-- CSS here -->
-  <link href="style.css" rel="stylesheet" type="text/css">
-
-</head>
-
-<body class="body">
-
-  <div class="top_body">
+  <head>
+	  
+    <meta charset="utf-8">
+    <title>Midnightstreet</title>
 	
+	  
+<!-- CSS here -->
+	
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body class="body">
+
+    <div class="top_body">
+	
+
 <!-- Header Content -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
-    </script>
-    <script> 
-      $(function(){
-      $("#header").load("/assets/php/header.html");  
-      });
-    </script>
+		
+      <script
+			  
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+		  
+      </script>
+		  
+      <script>
+		  
+        $(function(){
+        $("#nsfw").load("/assets/addons/nsfw.html");
+        $("#header").load("/assets/addons/header.html");
+        $("#footer").load("/assets/addons/footer.html"); 
+        });
+		  
+      </script>
 	
-<div id="header"></div>
-	
-  </div>	
+    <div id="header"></div>
+
+    </div>	
 	
 	
 <!-- Main Content -->
 	
-<div class="main_body">
-  <h2 align="center">Welcome to Midnightstreet</h2>
-  <p align="center">Midnightstreet is my side project in which I recreate "or at least emulate" the old days when furry flash games were popular by creating my own interactive animated/games using modern and open-source software such as Wick Editor or other than use Flash.</p>
+    <div class="main_body">
+      <h2 align="center">Welcome to Midnightstreet</h2>
+      <p align="center">Midnightstreet is my side project in which I recreate "or at least emulate" the old days when furry flash games were popular by creating my own interactive animated/games using modern and open-source software such as Wick Editor or other than use Flash.</p>
 	
-  <h2 align="center">&nbsp;</h2>
-  <h2 align="center">Why I'm Starting This Project</h2>
-  <p align="center">When I revisit old furry flash games, it feels like nostagia for me as an old furry, "yeah, I joined furry a long time ago," so I'd like to make my own interactive animated/games, but since Flash is killed by Adobe, I'd be better off using other software.</p>
+      <h2 align="center">&nbsp;</h2>
+      <h2 align="center">Why I'm Starting This Project</h2>
+      <p align="center">When I revisit old furry flash games, it feels like nostagia for me as an old furry, "yeah, I joined furry a long time ago," so I'd like to make my own interactive animated/games, but since Flash is killed by Adobe, I'd be better off using other software.</p>
 	
-  <p align="center">So I started to research and learn about some game engines like Unity, Godot, and others. However, all of those are app-based game engines that need to be installed and run, but what I really need is an engine that creates browser-based games that can be accessed using a modern browser. Then I discovered Wick Editor, which is very similar to Flash, but it's still in development and doesn't have many features like Flash for now.</p>
+      <p align="center">So I started to research and learn about some game engines like Unity, Godot, and others. However, all of those are app-based game engines that need to be installed and run, but what I really need is an engine that creates browser-based games that can be accessed using a modern browser. Then I discovered Wick Editor, which is very similar to Flash, but it's still in development and doesn't have many features like Flash for now.</p>
 	
-  <p align="center">But I'm willing to give a chance to try Wick Editor's. After all, I really like all the features it has, so if you're interested in trying Wick Editor, you guys could check in on the link below.</p>		
-</div> 
+      <p align="center">But I'm willing to give a chance to try Wick Editor's. After all, I really like all the features it has, so if you're interested in trying Wick Editor, you guys could check in on the link below.</p>		
+    </div> 
 
 	
 <!-- Footer Content -->
+	  
+  <div id="footer"></div>
+	  
+  </body>
 	
-<div align="center" class="footer">
-  <h4>This website is hosted using Github and all interactive content is made using Wick Editor.</h4>
-  <button class="wick_button" onClick="location.href='https://wickeditor.com/'">Try Wick Editor</button>
-  <p>All other names and logos are trademarks of their respective owners<br>
-     Copyright ©
-    <script type="text/JavaScript">
-    document.write(new Date().getFullYear());
-    </script>
-    Midnight Street
-  </p>
-</div>
 	
-</body>	
 <!-- Script Area -->
 	
 <script>
-    /* Get the element you want displayed in fullscreen */ 
-    var elem = document.getElementById("interactive_content");
-    
-    /* Function to open fullscreen mode */
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-      }
-    }
 	
-	
-    $(function () {
-        if (localStorage.getItem('popState') != 'shown') {
-            $("#popup").fadeIn();
-        }
-
-        $('#popup-close').click(function (e) {
-            $('#popup').fadeOut();
-            localStorage.setItem('popState', 'shown');
-        });
-    });
+/* None */
 	
 </script>
+	
+	
 </html>

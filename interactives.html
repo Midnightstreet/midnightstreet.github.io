@@ -1,157 +1,114 @@
 <!doctype html>
-<html>
-	
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<div class="alert" id="popup" style="display:none;">
-  <div class="alert-close" id="popup-close">X</div>
-  <p class="alert-text">This website contains NSFW material.
-Please ensure that you are at least 18 years old. otherwise, we have no responsibility for your future.</p>
-</div>
+<html>
+
+<!--
 	
-<link rel="shortcut icon" href="favicon_512.png"/>
+  <div id="nsfw"></div>
+	
+<!-- Favicon -->
+	
+  <link rel="shortcut icon" href="/favicon_512.png"/>
+	
+	
 <!-- Header -->
 	
-<head>
-  <meta charset="utf-8">
-  <title>Midnightstreet - Interactives</title>
-  <!-- CSS here -->
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <head>
+	  
+    <meta charset="utf-8">
+    <title>Midnightstreet - Interactive</title>
+	
+	  
+<!-- CSS here -->
+	
+    <link href="style.css" rel="stylesheet" type="text/css">
 
-</head>
+  </head>
 
-<body class="body">
-<div class="top_body">
+  <body class="body">
+
+    <div class="top_body">
 	
-	
-<!-- Midnight Street Title -->
-	
-<div align="center" class="primary_header">
-  <img class="logo" onClick="location.href='index.html'" src="assets/title_websize.png"/>
-</div>
-	
-	
+
 <!-- Header Content -->
+		
+      <script
+			  
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+		  
+      </script>
+		  
+      <script>
+		  
+        $(function(){
+        $("#nsfw").load("/assets/addons/nsfw.html");
+        $("#header").load("/assets/addons/header.html");
+        $("#footer").load("/assets/addons/footer.html"); 
+        });
+		  
+      </script>
 	
-<table class="index_content-1" width="100%">
-  <tbody>
-    <tr>
-      <td width="25%">
-		<table width="100%" border="0">
-          <tbody align="center">
-            <tr class="nav">
-              <td>
-			    <input class="interactive_button" onClick="location.href='interactives.html'" type="button">
-			  </td>
-            </tr>
-            <tr class="nav">
-              <td>
-				<input class="galleries_button" onClick="location.href='galleries.html'" type="button">
-			  </td>
-            </tr>
-            <tr class="nav">
-              <td>
-				<input class="about_button" onClick="location.href='about.html'" type="button">
-		      </td>
-            </tr>
-          </tbody>
-        </table>
-	  </td>
-      <td align="center" width="50%"><h2>Latest Interactive Animated</h2>
-		<iframe class="interactive_content" id="interactive_content" src="https://midnightstreet.github.io/midnightstreet-archive-v1/wick_test/wick_test.html" allowfullscreen></iframe>
-		<button class="fullsize_button" onclick="openFullscreen();">Fullscreen</button>
-	  </td>
-      <td align="center" width="25%">&nbsp;
-		<table width="100%" border="0">
-          <tbody align="center">
-		    <tr>
-              <td>
-				<button class="patreon_button" onClick="location.href='https://www.patreon.com/mengmira'"></button>
-			  </td>
-            </tr>
-		    <tr>
-              <td>
-				<button class="fanbox_button" onClick="location.href='https://mengmira.fanbox.cc'"></button>
-			  </td>
-            </tr>
-          </tbody>
+    <div id="header"></div>
 
-        </table>
-	  </td>
-    </tr>
-  </tbody>
-</table>
-</div>
+    </div>	
 	
 	
 <!-- Main Content -->	
 
-<div align="center" class="main_body">
-  <h3>Other Interactive Animated&nbsp;</h3>
-  <table class="other_interactive" width="100%" border="0">
-    <tbody>
-      <tr>
-        <td class="interactive_thumbnail" align="center" >
-	      <img src="assets/wick-test_banner.svg" onClick="location.href='interactives_wick-test.html'" width="90%" alt=""/>
-		</td>
-        <td class="interactive_thumbnail" align="center">
-	      <img src="assets/webgl-test_banner.svg" onClick="location.href='interactives_webgl-test.html'" width="90%" alt=""/>
-		</td>
-        <td class="interactive_thumbnail" align="center">
-	      <img src="assets/placeholder_banner.svg" onClick="location.href='interactives.html'" width="90%" alt=""/>
-		</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+	  
+    <div align="center" class="main_body">
+		
+      <h3>Other Interactive Animated</h3>
+		
+      <table width="auto" border="0">
+		  
+        <tbody>
+			
+          <tr>
+			  
+            <td class="other_interactive" align="center" >
+	          <img class="interactive_thumbnail" src="/assets/wick-test_banner.svg" onClick="location.href='/interactives/interactives_wick-test.html'" alt=""/>
+		      <p>Wick Test</p>
+		      <p>Testing games build use Wick Editor</p>
+		    </td>
+			  
+            <td class="other_interactive" align="center">
+	          <img class="interactive_thumbnail" src="/assets/webgl-test_banner.svg" onClick="location.href='/interactives/interactives_webgl-test.html'" alt=""/>
+		      <p>WebGL Test</p>
+		      <p>Testing games build use Other 3D Engine</p>
+		    </td>
+			  
+            <td class="other_interactive" align="center">
+	          <img  class="interactive_thumbnail" src="/assets/placeholder_banner.svg" onClick="location.href='#'"  alt=""/>
+		      <p>Placeholder</p>
+		      <p>Nothing to do here</p>
+		    </td>
+			  
+          </tr>
+			
+        </tbody>
+		  
+      </table>
+		
+    </div>
+	  
 	
 <!-- Footer Content -->
-	
-<div align="center" class="footer">
-  <h4>This website is hosted using Github and mostly interactive content is made using Wick Editor.</h4>
-  <button class="wick_button" onClick="location.href='https://wickeditor.com/'">Try Wick Editor</button>
-  <p>All other names and logos are trademarks of their respective owners<br>
-     Copyright ©
-    <script type="text/JavaScript">
-    document.write(new Date().getFullYear());
-    </script>
-    Midnightstreet
-  </p>
-</div>
-	
-	
-</body>
+	  
+    <div id="footer"></div>
+	  
+  </body>
 	
 	
 <!-- Script Area -->
 	
 <script>
-    /* Get the element you want displayed in fullscreen */ 
-    var elem = document.getElementById("interactive_content");
-    
-    /* Function to open fullscreen mode */
-    function openFullscreen() {
-      if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-      } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-      } else if (elem.msRequestFullscreen) { /* IE11 */
-        elem.msRequestFullscreen();
-      }
-    }
 	
+/* None */
 	
-    $(function () {
-        if (localStorage.getItem('popState') != 'shown') {
-            $("#popup").fadeIn();
-        }
-
-        $('#popup-close').click(function (e) {
-            $('#popup').fadeOut();
-            localStorage.setItem('popState', 'shown');
-        });
-    });
 </script>
+	
 	
 </html>

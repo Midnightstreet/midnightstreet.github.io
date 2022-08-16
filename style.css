@@ -30,6 +30,11 @@ body,td,th {
 	color: white;
 }
 
+a {
+	color: slateblue;
+	text-decoration: none;
+}
+
 /* CSS General Setting */
 
 .alert {
@@ -55,7 +60,7 @@ body,td,th {
     width: auto;
 }
 .top_body{
-	background-image: url("assets/midnight_street.jpg");
+	background-image: url("/assets/midnight_street.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -83,7 +88,7 @@ body,td,th {
 }
 .interactive_button {
 	border: 0;
-    background-image: url("assets/interactives_button-normal.svg");
+    background-image: url("/assets/interactives_button-normal.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,7 +99,7 @@ body,td,th {
 }
 .interactive_button:hover {
 	border: 0;
-    background-image: url("assets/interactives_button-hover.svg");
+    background-image: url("/assets/interactives_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -104,7 +109,7 @@ body,td,th {
 }
 .interactive_button:active {
 	border: 0;
-    background-image: url("assets/interactives_button-hover.svg");
+    background-image: url("/assets/interactives_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -114,7 +119,7 @@ body,td,th {
 }
 .galleries_button {
 	border: 0;
-    background-image: url("assets/galleries_button-normal.svg");
+    background-image: url("/assets/galleries_button-normal.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -125,7 +130,7 @@ body,td,th {
 }
 .galleries_button:hover {
 	border: 0;
-    background-image: url("assets/galleries_button-hover.svg");
+    background-image: url("/assets/galleries_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,7 +140,7 @@ body,td,th {
 }
 .galleries_button:active {
 	border: 0;
-    background-image: url("assets/galleries_button-hover.svg");
+    background-image: url("/assets/galleries_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -145,7 +150,7 @@ body,td,th {
 }
 .about_button {
 	border: 0;
-    background-image: url("assets/about_button-normal.svg");
+    background-image: url("/assets/about_button-normal.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -156,7 +161,7 @@ body,td,th {
 }
 .about_button:hover {
 	border: 0;
-    background-image: url("assets/about_button-hover.svg");
+    background-image: url("/assets/about_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -166,7 +171,7 @@ body,td,th {
 }
 .about_button:active {
 	border: 0;
-    background-image: url("assets/about_button-hover.svg");
+    background-image: url("/assets/about_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -175,11 +180,15 @@ body,td,th {
 	width: 14vw;
 }
 .interactive_content{
-	background:url("assets/loading.svg") center no-repeat;
+	background:url("/assets/loading.svg") center no-repeat;
 	background-size: cover;
 	border: 0;
 	width: 100%;
 	height: 28vw;
+}
+.other_interactive{
+	background-size: cover;
+	border: 0;
 }
 .fullsize_button{
 	border: 1pt solid white;
@@ -236,7 +245,7 @@ body,td,th {
 .fanbox_button {
 	margin-bottom: 20vw;
 	border: 0;
-    background-image: url("assets/fanbox_button-normal.svg");
+    background-image: url("/assets/fanbox_button-normal.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -247,7 +256,7 @@ body,td,th {
 }
 .fanbox_button:hover {
 	border: 0;
-    background-image: url("assets/fanbox_button-hover.svg");
+    background-image: url("/assets/fanbox_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -257,7 +266,7 @@ body,td,th {
 }
 .fanbox_button:active {
 	border: 0;
-    background-image: url("assets/fanbox_button-hover.svg");
+    background-image: url("/assets/fanbox_button-hover.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -270,7 +279,10 @@ body,td,th {
 	background-color: #1A0D1E;
 }
 .other_interactive {
-	margin-top: 4vw;
+	vertical-align: baseline;
+	width: 25%;
+	height: auto;
+	padding: 1vw;
 }
 .interactive_thumbnail {
     transition-duration: 0.2s;
@@ -292,6 +304,9 @@ body,td,th {
 	color: white;
 	padding-top: 6vw;
     padding-bottom: 10vw;
+}
+.footer_submenu {
+	height: 3vw;
 }
 .wick_button{
     border: 1pt solid #1EE29A;

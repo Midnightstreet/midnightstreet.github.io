@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html>
+	
+<!-- Header -->
+	
+  <head>
+	
+    <meta charset="utf-8">
+    <title>Midnightstreet - About</title>
+	
+<!-- CSS here -->
+	  
+    <link href="/style.css" rel="stylesheet" type="text/css">
+
+	
+  </head>
+
+  <body>
+	
+	
+<!-- NSFW popup -->
+	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		
+    </script>
+
+    <div class="alert" id="popup" style="display:none;">
+	  
+      <div class="alert-close" id="popup-close">X
+	  </div>
+	  
+      <p class="alert-text">This website contains NSFW material.
+      Please ensure that you are at least 18 years old. otherwise, we have no responsibility for your future.
+	  </p>
+	  
+    </div>
+	
+  </body>
+	
+  <script>
+	  
+	  
+/* NSFW popup script */ 
+	  
+    $(function () {
+		
+        if (localStorage.getItem('popState') != 'shown') {
+            $("#popup").fadeIn();
+        }
+
+        $('#popup-close').click(function (e) {
+            $('#popup').fadeOut();
+            localStorage.setItem('popState', 'shown');
+        });
+    });
+	
+  </script>
+	
+	
+	
+</html>
