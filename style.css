@@ -5,11 +5,11 @@
 
 @font-face {
     font-family: 'closeness';
-    src: url('closeness-bold.ttf')
+    src: url('/assets/closeness-bold.ttf')
 }
 @font-face {
     font-family: 'aldrich';
-	src: url('aldrich-regular.ttf')
+	src: url('assets/aldrich-regular.ttf')
 }
 html, body {
   background-color: black;
@@ -60,7 +60,6 @@ body,td,th {
     background-size: cover;
     background-position: center;
 	background-color: black;
-	padding-bottom: 4vw;
 }
 .primary_header {
 	width: auto;
