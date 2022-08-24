@@ -1,4 +1,4 @@
-<img src="[https://img.shields.io/liberapay/patrons/MengMira.svg?logo=liberapay](https://liberapay.com/MengMira/)">
+<img src="https://img.shields.io/liberapay/patrons/MengMira.svg?logo=liberapay(https://liberapay.com/MengMira/)">
 
 # MIdnightstreet
 
