@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/liberapay/patrons/MengMira.svg?logo=liberapay">
+
 # MIdnightstreet
 
 [Check Midnightstreet now!](https://midnightstreet.github.io/)
